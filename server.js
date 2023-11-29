@@ -4,12 +4,11 @@ function sleep(ms) {
 }
 
 async function main() {
-  const favoriteFood = process.env.FAVORITE_FOOD;
+  const FAVORITE_INSTRUCTOR = process.env.NAME;
 
   while(true) {
-    console.log("Microservices rock!");
+    console.log(`${FAVORITE_INSTRUCTOR} rocks!`);
     
-    console.log(`My favorite food is ${favoriteFood}`);
 
     await sleep(5000);
   }
